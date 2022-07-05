@@ -117,21 +117,23 @@ header ul li:nth-child(2) a::before{
 header ul li:nth-child(2) a:hover::before{
   transform: translateX(150px);
   background: var(--Base-Hover);
+  opacity: 1;
 }
 header ul li:nth-child(2) a:hover{
   color: var(--Base-color);
+  
 }
 
 /* !Main ////////////////////////////////////////////*/
 
 main {
-  width: 98%;
+  width: 100%;
   max-width: 1440px;
   margin: auto;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 22px;
   margin: 10px 0;
 }
   
@@ -289,12 +291,12 @@ main {
 }
 /* !Section Accomodation ///////////////////////*/
 .acomodation{
-  width: 98%;
+  width: 100%;
   max-width: 1440px;
   margin: auto;
   margin-top: 50px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .container-accomodation{
@@ -343,7 +345,7 @@ main {
   display: flex;
   align-items: center;
   width: 100%;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   padding: 30px;
 }
@@ -390,7 +392,7 @@ main {
 
 .container-most-popular{
   position: relative;
-  max-width: 400px;
+  max-width: 500px;
   height: 690px;
   display: flex;
   margin-left: 5px;
@@ -413,7 +415,7 @@ main {
 }
 
 .card-most-popular{
-  width: 380px;
+  width: 450px;
   height: 150px;
   padding: 0 15px ;
 
@@ -428,8 +430,11 @@ main {
   align-items: center;
   width: 100%;
   padding: 0 35px ;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
+}
+.popular-title i{
+  font-size: 24px;
 }
 .show-more a{
   display: flex;
@@ -508,7 +513,7 @@ main {
 }
 /* !Section activités ///////////////////////*/
 .activity{
-  width: 98%;
+  width: 100%;
   max-width: 1440px;
   margin: auto;
   margin-top: 80px;
@@ -520,7 +525,7 @@ main {
   align-items: flex-start;
 }
 .activity-title{
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -680,7 +685,8 @@ main {
 /* !Section Media Queries ///////////////////////*/
 @media screen and (max-width: 1300px) {
   main {
-    width: 95%;
+    width: 90%;
+    margin: auto;
   }
 
   .filters{
@@ -700,8 +706,9 @@ main {
   }
 
   .container-accomodation{
-    max-width: 1440PX;
+    max-width: 1000PX;
     height: auto;
+    margin: auto;
     transform: translateY(50px);
   }
   .container-card-acomodation{
@@ -715,17 +722,18 @@ main {
 
   .container-most-popular{
     height: auto;
-    max-width: 1440px;
+    max-width: 1000px;
     width: 100%;
+    margin: auto;
     justify-content: center;
     align-items: center;
-    
-
+    flex-wrap: wrap;
   }
   .container-card-most-popular{
     flex-direction: initial;
     justify-content: center;
-    gap: 0;
+    flex-wrap: wrap;
+    gap: 10;
     padding: 20px 0;
   }
   .card-most-popular{
@@ -734,15 +742,31 @@ main {
   }
   .popular-title{
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 20px;
+    
   }
 
   .popular-title i{
     margin-left: 30px;
+    justify-content: space-around;
+  }
+
+  .container-activity{
+    height: auto;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
   }
   .card-box-activity#activity-4 h3{
     font-size: 12px;
   }
+
+  .footer-blocs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+}
 }
 
 @media screen and (max-width: 992px) {
@@ -872,20 +896,33 @@ main {
   .navbar{
     flex-direction: column;
     margin-bottom: 50px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
   .logo{
     height: 109px;
     width: auto;
   }
+
+  header ul{
+    width: 100%;
+    justify-content: space-between;
+  }
   header ul li a::before{
     top: 40px;
   }
-
+  header ul li:nth-child(2) a::before {
+    left: -180px;
+    width: 150%;
+    opacity: 0;
+  }
   main{
     justify-content: center;
     align-items: center;
+  }
+  .container-most-popular{
+    flex-wrap: nowrap;
+    width: 90%;
   }
   .title{
     text-align: left;
@@ -897,7 +934,7 @@ main {
   }
   .Bx-research{
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .research-btn{
     display: none;
@@ -905,7 +942,9 @@ main {
   #loop-icon {
     display: initial;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
   }
   .filters ul{
     justify-content: flex-start;
@@ -923,13 +962,16 @@ main {
   }
   .popular-title{
     font-size: 19px;
-    justify-content: space-between;
-    padding: 0 10px;
+    justify-content: space-around;
+    padding: 10px;
   }
   .acomodation-title{
     font-size: 22px;
     padding: 20px 0;
     justify-content: flex-start;
+  }
+  .container-activity{
+    width: 90%;
   }
   .activity-title{
     font-size: 22px;
@@ -937,12 +979,15 @@ main {
     justify-content: flex-start;
     width: 100%;
   }
-  
+  .acomodation{
+    width: 90%;
+  }
   .show-more {
   margin: 40px 0;
   }
 
   .footer-blocs {
+    width: 90%;
     display: inline-flex;
     flex-direction: column;
   }
