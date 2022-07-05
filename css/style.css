@@ -765,7 +765,8 @@ main {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1000px;
+  margin: auto;
 }
 }
 
@@ -856,7 +857,9 @@ main {
   .card-box-activity#activity-4 h3{
     font-size: 18px;
   }
-  
+  .footer-blocs {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -971,7 +974,7 @@ main {
     justify-content: flex-start;
   }
   .container-activity{
-    width: 90%;
+    width: 100%;
   }
   .activity-title{
     font-size: 22px;
@@ -979,10 +982,7 @@ main {
     justify-content: flex-start;
     width: 100%;
   }
-  .acomodation{
-    width: 90%;
-  }
-  .show-more {
+  .show-more a{
   margin: 40px 0;
   }
 
@@ -992,10 +992,76 @@ main {
     flex-direction: column;
   }
   .footer-blocs .footer-bloc {
-    padding: 10px 20px;
+    padding: 10px 5px;
   }
   .small-1{
-    display: contents
+    display: block;
+    width: 100%;
+  }
+  .card-box-activity#activity-1 {
+    width: 100%;
+    height: 220px;
+  }
+  .card-box-activity#activity-1 img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .card-box-activity#activity-2 {
+    width: 100%;
+    height: 220px;
+    
+  }
+  .card-box-activity#activity-2 img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .card-box-activity#activity-3 {
+    width: 100%;
+    height: 220px;
+  }
+  .card-box-activity#activity-3 img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .card-box-activity#activity-4 {
+    width: 100%;
+    height: 220px;
+  }
+  .card-box-activity#activity-4 img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .card-box-activity#activity-5 {
+    width: 100%;
+    height: 220px;
+  }
+  .card-box-activity#activity-5 img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .card-box-activity#activity-6 {
+    width: 100%;
+    height: 220px;
+  }
+  .card-box-activity#activity-6 img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  .container-most-popular{
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 
