@@ -127,7 +127,7 @@ header ul li:nth-child(2) a:hover{
 /* !Main ////////////////////////////////////////////*/
 
 main {
-  width: 100%;
+  width: 95%;
   max-width: 1440px;
   margin: auto;
 }
@@ -770,7 +770,7 @@ main {
 }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
 
   .filters ul{
     flex-wrap: wrap;
@@ -793,6 +793,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
   }
   .card-box-activity#activity-1 {
     width: 680px;
@@ -995,8 +996,9 @@ main {
     padding: 10px 5px;
   }
   .small-1{
-    display: block;
+    display: flex;
     width: 100%;
+    
   }
   .card-box-activity#activity-1 {
     width: 100%;
